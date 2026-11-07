@@ -1,6 +1,5 @@
 plugins {
     id 'fabric-loom' version '1.9-SNAPSHOT'
-    id 'maven-publish'
 }
 
 version = project.mod_version
@@ -11,7 +10,6 @@ base {
 }
 
 repositories {
-    mavenCentral()
 }
 
 dependencies {
@@ -36,10 +34,4 @@ java {
     withSourcesJar()
     sourceCompatibility = JavaVersion.VERSION_21
     targetCompatibility = JavaVersion.VERSION_21
-}
-
-jar {
-    from("LICENSE") {
-        rename { "${it}_${project.base.archivesName.get()}" }
-    }
 }
