@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "zmianki",
+  "version": "${version}",
+  "name": "Zmianki",
+  "description": "System losowania bonusu obrażeń na mieczu (inspirowany mechaniką 'zmianki' znaną z serwerów typu Anarchia).",
+  "authors": ["Ty"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/zmianki/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.zmianki.ZmiankiMod"],
+    "client": ["com.example.zmianki.ZmiankiClient"]
+  },
+  "mixins": ["zmianki.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
